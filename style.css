@@ -179,12 +179,6 @@ background-color:#1A0B2E ;
     font-weight: bolder;
     text-align: center;
 }
-/*.choose{
-    width: 1600px;
-    height: 1121px;
-    background-color: #230E3D;
-}*/
-/*start*/
 .choose{
     width: 1600px;
     height: 1121px;
@@ -273,8 +267,6 @@ padding: 40px;
   box-sizing: border-box;
    padding: 40px;
 }
-/*end*/
-
 .feature{
     width: 1600px;
     height: 1276px;
@@ -286,8 +278,6 @@ padding: 40px;
 .video{
 width: 1200px;
 height: 538px;
-background-color: #00FF88;
-
 }
 .vitext
 {
@@ -302,7 +292,6 @@ background-color: #00FF88;
 .cd{
     width: 1200px;
     height: 440px;
-    background-color: blue;
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
@@ -313,11 +302,53 @@ background-color: #00FF88;
     height: 440px;
     background-color:#230E3D  ;
     border-radius: 20px;
+    position: relative;
 }
-.cd1 img{
+.back{
+      width: 100%;
+    display: block;
     width: 380px;
     height: 214px;
+   border-top-left-radius: 20px ;
+   border-top-right-radius: 20px;
+}
+.up{
+    position: absolute;
+    top: 25%;
+    left: calc(35% + 50px); 
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+}
+.cd2{
+    width: 380px;
+    height: 226px;
+    background-color:#230E3D  ;
     border-radius: 20px;
+}
+.featitle
+{
+    width: 332px;
+    height: 58px;
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.feadescri{
+    width: 332px;
+    height: 72px;
+    margin-top: 12px;
+}
+.time{
+    width: 332px;
+    height: 24px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #00FF88;
+    font-size: 16px;
+    font-weight: 600;
 }
 .host{
 width: 1200px;
@@ -367,11 +398,17 @@ margin-top: 120px;
     height: 40px;
     display: flex;
     justify-content: space-between;
+    margin-top:16px;
+    gap: 8px;
 }
-.social .a .img{
- width: 20px;
- height: 20px;
+.socb{
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
  border: 1px solid #b28ae6;
+ box-sizing: border-box;
+ padding: 10.5px 10px;
+ background-color: ;
 }
 .fotter
 { 
