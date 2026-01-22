@@ -269,19 +269,53 @@ padding: 40px;
     width: 1600px;
     height: 1276px;
     background-color: #1A0B2E;
+    box-sizing: border-box;
+    padding-top: 120px;
+    padding-left: 200px;
 }
 .video{
 width: 1200px;
 height: 538px;
 background-color: #00FF88;
+
+}
+.vitext
+{
+    width: 1200px;
+    height: 58px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: bold;
+     
+}
+.cd{
+    width: 1200px;
+    height: 440px;
+    background-color: blue;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.cd1{
+    width: 380px;
+    height: 440px;
+    background-color:#230E3D  ;
+    border-radius: 20px;
+}
+.cd1 img{
+    width: 380px;
+    height: 214px;
+    border-radius: 20px;
 }
 .host{
 width: 1200px;
 height: 378px;
-margin: 120px 200px;
+margin-top: 120px;
 
 }
-.hosttitle{
+.hosttitle{  
     width: 1200px;
     height: 58px;
     color: #ffffff;
@@ -289,7 +323,6 @@ margin: 120px 200px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 40px;
-    background-color: #00FF88;
 }
 .hostdetails{
     width: 1200px;
