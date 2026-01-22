@@ -69,8 +69,18 @@ section{
     width: 350px;
     height: 350px;
     padding-left:  100px;
-    
-
+    position: relative;
+}
+.downsec{
+    width: 100%;
+    display: block;
+}
+.upsec{
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 50px); 
+    transform: translate(-50%, -50%);
+    width: 90px;
 }
 
 .text{
