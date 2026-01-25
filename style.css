@@ -56,11 +56,14 @@ nav{
   color: #ffffff;
   font-weight: 600;
   font-size: 16px;
-  border: none;
+ border: none;
   display: flex;
   align-items: center;
   padding-left: 16px;
   gap: 6px;
+}
+.hamburger{
+    display: none;
 }
 section{
     border-top: 1px solid #b28ae6;
@@ -68,6 +71,9 @@ section{
     margin: 0 auto;
     height: 760px;
     background: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .des
 {
@@ -215,11 +221,16 @@ section{
     margin-right: auto;
 }
 .box{
-     width: 1200px;
-    height: 94px;
+    
     display: flex;
     justify-content: space-between;
     padding-bottom: 120px;
+   
+}
+.abbox{
+    
+    display: flex;
+
 }
 .box1{
     width: 240px;
@@ -478,15 +489,16 @@ margin-top: 120px;
     height: 412px;
     background: url(./assets/footer-bg.png);
     box-sizing: border-box;
-    padding:120px ;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding:120px ;
 }
 .fot{
     width: 1360px;
     height: 172px;
     text-align: center;
+
 }
 .logofotter{
     font-size: 90px;
@@ -499,9 +511,13 @@ margin-top: 120px;
     width: 544px;
     height: 24px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 16px;
-    justify-content: space-between;
-    
+}
+#fott1{
+    display: flex;
+    gap: 40px;
 }
 .fota{
     color: #ffffff;
@@ -509,6 +525,9 @@ margin-top: 120px;
     box-sizing: border-box;
     width: 544px;
     height: 24px; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 .copy{
     width: 1360px;
@@ -516,8 +535,290 @@ margin-top: 120px;
     margin-top: 32px;
     color: #fafafa;
 }
+.fott{
+    width: 300px;
+    display: flex;
+    gap: px;
+}
 @media (min-width: 992px) {
   body{
     overflow-x: hidden;
+  }
+}
+    @media (max-width: 576px) {
+
+  /* ---------- NAV ---------- */
+  nav{
+    flex-direction: row;
+    height: auto;
+    padding: 16px 0;
+  }
+
+  .logo{
+    font-size: 28px;
+    padding-left: 20px;
+    padding-top: 0;
+  }
+
+  .menu{
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: #1A0B2E;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    display: none;
+  }
+
+  .bb{
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: #1A0B2E;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    display: none;
+    padding-right: 20px;
+    padding-top: 0;
+  }
+    .hamburger{
+    display: block;
+    padding-right: 20px;
+  }
+
+  
+
+  /* ---------- HERO SECTION ---------- */
+  section{
+    height: auto;
+    background-size: auto;
+  }
+  .des{
+    width: 100%;
+    padding: 40px 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+  .mic{
+    width: 260px;
+    height: 260px;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+  .upsec{
+    width: 70px;
+    left: 50%;
+  }
+  .new-badge{
+    right: 10px;
+    top: 10px;
+    font-size: 14px;
+    height: auto;
+  }
+  .text{
+    width: 100%;
+    text-align: center;
+  }
+  .t1{
+    font-size: 36px;
+    height: auto;
+  }
+  .t2{
+    font-size: 14px;
+  }
+  .btn{
+    box-sizing: border-box;
+    width: 354px;
+    gap: 16px;
+    padding: 24px 0 0;
+    align-items: center;
+  }
+  /* ---------- ABOUT ---------- */
+  .about{
+    height: auto;
+  }
+  .ab{
+    padding: 40px 20px;
+  }
+  .ab1{
+    width: 100%;
+    font-size: 32px;
+  }
+  .ab2{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+  }
+  .box{
+    width: 100%;
+    height: auto;
+    gap: 32px;
+    padding-bottom: 60px;
+    display: flex;
+  }
+  .abbox{
+    display: flex;
+    flex-direction: column;
+  }
+  .box2{
+  display: flex;
+  }
+  /* ---------- WHY CHOOSE ---------- */
+  .choose{
+    height: auto;
+    padding-bottom: 40px;
+    padding-left: 15% ;
+    box-sizing: border-box;
+  }
+  .choose-title{
+    font-size: 32px;
+    padding-top: 40px;
+   padding-right: 17%;
+  }
+  .chbox{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 16px;
+  }
+   .chbox1{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .chbox2{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 16px;
+     }
+     .card1{
+        width: 400px;
+        height: 287px;
+        box-sizing: border-box;
+        padding: 24px;
+     }
+  .card,
+  .card2,
+  .card3,
+  .card4,
+  .card5{
+    width:400px;
+    height: auto;
+  }
+  /* ---------- FEATURED ---------- */
+  .feature{
+    height: auto;
+    box-sizing: border-box;
+    padding: 40px 20px;
+  }
+.back{
+    width: 400px;
+    height: 225px;
+}
+  .video{
+    width: 400px;
+    height: 1500px;
+    gap: 16px;
+  }
+  .vitext,
+  .cd{
+    width: 100%;
+  }
+  .vitext{
+    font-size:32px;
+  }
+  .cd{
+    flex-direction: column;
+    gap: 24px;
+  }
+  .cd1{
+    width:400px;
+    height: auto;
+  }
+  /* ---------- HOST ---------- */
+  .host{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hosttitle{
+    font-size: 32px;
+    width: 400px;
+    margin-top: 60px;
+  }
+  .hostdetails{
+    width: 400px;
+    height: auto;
+    flex-direction: column;
+    padding: 24px;
+    text-align: center;
+  }
+  .hostpic{
+    margin: 0 auto;
+  }
+  .hosttext{
+    width: 100%;
+    height: auto;
+  }
+  .social{
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 50%;
+
+  }
+  /* ---------- FOOTER ---------- */
+  .fotter{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .fot{
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+  }
+
+  .logofotter{
+    font-size: 48px;
+    padding-bottom: 30px;
+  }
+
+  .fottersocial{
+    width: 255px;
+    padding-left: 0;
+    justify-content: center;
+    gap: 16px;
+    display: flex;
+    flex-direction:column ;
+  }
+.fott{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+}
+  .copy{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
   }
 }
